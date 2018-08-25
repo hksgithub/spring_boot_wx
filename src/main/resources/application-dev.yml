@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/weixin_order?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+server:
+  context-path: /sell
+wechat:
+  mpAppId: wx8ba1785b9cb8c707
+  mpAppSecret: ccbf85ed82f4add0834546827fc708e8
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9xxxxxx
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+  keyPath: /var/weixin_cert/h5.p12  #证书路径
+  notifyUrl: http://hks.natapp1.cc/sell/pay/notify #异步通知路径
+
+projectUrl:
+  wechatMpAuthorize: http://hks.natapp1.cc
+  wechatOpenAuthorize: http://hks.natapp1.cc
+  sell: http://hks.natapp1.cc
